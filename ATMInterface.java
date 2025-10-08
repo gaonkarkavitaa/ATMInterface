@@ -19,8 +19,10 @@ public class ATM {
             } else if (ch == 3) {
                 System.out.print("Withdraw: ");
                 double amt = sc.nextDouble();
-                if (amt <= balance) balance -= amt;
-                else System.out.println("Insufficient balance!");
+                if (amt <= balance)
+                    balance -= amt;
+                else 
+                System.out.println("Insufficient balance!");
                 System.out.println("New Balance: " + balance);
             } else if (ch == 4) {
                 System.out.println("Thank you for using the ATM!");
